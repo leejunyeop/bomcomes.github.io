@@ -443,7 +443,46 @@
     .header-form-area .header-form-inner{
         margin-top: 60px;
     }
+	  .header-area .shape-1 {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    -webkit-animation: left2right 10s linear 0s infinite;
+    animation: left2right 10s linear 0s infinite;
+    opacity: 1; }
+  .header-area .shape-2 {
+    position: absolute;
+    right: -10%;
+    top: 15%;
+    -webkit-animation: upndown02 9s linear 0s infinite;
+    animation: upndown02 9s linear 0s infinite;
+    opacity: 1;
+	z-index: 2;}
+  .header-area .shape-3 {
+    position: absolute;
+    right: 32%;
+    top: 31%;
+    -webkit-animation: upndown02 7s linear 0s infinite;
+    animation: upndown02 7s linear 0s infinite;
+    opacity: 1; }
+  .header-area .header-right-image {
+    position: absolute;
+    bottom: 0px;
+    right: 18%; }
+   .header-area .imgphone {
+	top: 15%;
+    -webkit-animation: upndown02 10s linear 0s infinite;
+    animation: upndown02 10s linear 0s infinite;
+	}
+	.header-inner{margin-top: 200px;}
 }
+
+
+
+
+
+
+
 
 
 
@@ -465,8 +504,8 @@
         line-height: 55px;
     }
     .header-area .header-inner p {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 22px;
     }
     .section-title .title, 
     .video-area .right-content-area .title, 
@@ -661,7 +700,7 @@
         width: 155px;
     }
     .header-area .header-inner .title {
-        font-size: 35px;
+        font-size: 42px; letter-spacing: -1px;
         line-height: 46px;
     }
     .section-title .title, 
