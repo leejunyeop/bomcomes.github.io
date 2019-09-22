@@ -392,7 +392,7 @@
 	margin-bottom: 30px;
 }
 .footer-top {
-	padding-bottom: 65px;
+	padding-bottom: 21px;
 }
 .single-testimonial-item .hover .hover-inner {
 	text-align: center;
@@ -469,8 +469,30 @@
 	background-size: 140% auto;
 	background-position: 17% 150%;
 }
-	.contact-area-wrapper {padding: 48px 15px 280px 15px; }	
+.contact-area-wrapper {padding: 48px 15px 280px 15px; }	
+.footer_right {
+    font-size: 13px;
+    color: #9497a2;
+    float: left;}
+.footer_right .footer_menu{
+	float: left;}
+.footer_right li{ float: left;}	
+.footer_menu li{float: left;
+    margin-left: 0;
+    margin-right: 13px;}
+.footer-area .social-icon {
+    float: right;
+    line-height: 29px;}	
+.footer-area .social-icon {
+    float: left;
+    line-height: 29px;}
+.footer-area .social-icon li { float: left; margin-left: 0; margin-right: 8px;}	
+.copyright-inner .left-content-area {
+	margin-bottom: 10px;
 }
+.copyright-inner .right-content-area {float: none; text-align: left;}
+}
+
 	
 /* medium tablet layout 599px */
 
@@ -508,7 +530,6 @@
 }
 .counterup-area {
 	padding-bottom: 60px;
-	background: #C93134;
 }
 .download-area-wrapper .btn-wrapper .boxed-btn {
 	margin: 0 5px;
@@ -527,16 +548,6 @@
 .single-price-plan-01 .price-header .price-wrap .price {
 	font-size: 35px;
 	line-height: 45px;
-}
-.copyright-inner .left-content-area {
-	display: block;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.copyright-inner .right-content-area {
-	display: block;
-	text-align: center;
-	float: none;
 }
 .navbar-area.nav-fixed.style-two .navbar-collapse .navbar-nav .nav-item.active .nav-link,  .navbar-area.nav-fixed.style-two .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
 	color: #333;
