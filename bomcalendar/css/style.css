@@ -9,7 +9,7 @@ html, body, form, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fields
 
 html, body { height: 100%; font-size: 10px; }
 
-body { background-color: #fff; -webkit-text-size-adjust: none; font-family: 'NanumSquare', 'Apple SD Gothic Neo','AppleGothic','Apple Gothic','-apple-system',Sans-serif; font-weight: 400; color: #323232; letter-spacing: -0.1rem; word-break: keep-all; }
+body { background-color: #fff; -webkit-text-size-adjust: none; font-family: 'NanumSquare', 'Apple SD Gothic Neo','AppleGothic','Apple Gothic','-apple-system',Sans-serif; font-weight: 400; color: #323232; word-break: keep-all; }
 
 input, textarea, select, button { font: inherit; vertical-align: middle; padding: 0; margin: 0; }
 
