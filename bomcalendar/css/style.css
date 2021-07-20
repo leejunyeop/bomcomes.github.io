@@ -15,7 +15,7 @@ input, textarea, select, button { font: inherit; vertical-align: middle; padding
 
 input[type="button"], input[type="text"], input[type="image"], input[type="submit"], input[type="password"], textarea { outline: none; -webkit-appearance: none; }
 
-input[type="button"]:hover, input[type="submit"]:hover { cursor: point
+input[type="button"]:hover, input[type="submit"]:hover { cursor: pointer;}
 input[type="checkbox"] { -webkit-appearance: none; -ms-appearance: none; }
 
 input[type="radio"] { -webkit-appearance: none; -ms-appearance: none; }
