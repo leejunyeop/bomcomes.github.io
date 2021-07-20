@@ -59,7 +59,7 @@ select { background: transparent; }
 
 .event-wrap .event-list { padding: 20px 14px; }
 
-.event-wrap .event-list .event-box .img-box { height: 127px; position: relative; background-repeat: no-repeat; background-size: contain; background-position: right; border-radius: 5px; }
+.event-wrap .event-list .event-box .img-box { height: 127px; position: relative; background-repeat: no-repeat; background-size: contain; background-position: right bottom; border-radius: 5px; }
 
 .event-wrap .event-list .event-box .img-box .img-desc { position: absolute; top: 10px; left: 10px; }
 
