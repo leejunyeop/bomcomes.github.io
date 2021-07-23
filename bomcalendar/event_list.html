@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li>
-                            <a onclick="openNewWebViewWithUrl('./event_view.html')" href="#">
+                            <a onclick="openNewWebViewWithUrl('https://www.instagram.com/p/CQYaRp3JaoU/?utm_source=ig_web_copy_link')" href="#">
                                 <div class="event-box">
                                     <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
                                         <div class="img-desc">
@@ -98,3 +98,24 @@
     <!-- <div class="popup-page">
 </div> -->
     <!-- // .popup-page -->
+    
+    <script>
+        function openNewWebViewWithUrl(target) {
+            var params = {
+                url: target
+            }
+            if (isAndroid() && !!window.tswebview.openNewWebView) {
+                // Call Android interface
+                window.tswebview.openNewWebView(JSON.stringify(params));
+            } else if (isIOS() && !!window.webkit.messageHandlers.openNewWebView) {
+                // Call iOS interface
+                window.webkit.messageHandlers.openNewWebView.postMessage(params);
+            } else {
+                // No Android or iOS interface found
+                alert("No openNewWebView APIs found.");
+            }
+        }
+    </script>
+    
+    </body>
+</html>
