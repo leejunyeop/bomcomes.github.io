@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./event_view.html">
+                            <a onclick="openNewWebViewWithPath('이벤트','/event_view.html')" href="#">
                                 <div class="event-box">
                                     <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
                                         <div class="img-desc">
@@ -48,14 +48,14 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <p class="title">event_view에서 버튼으로 Outlink</p>
+                                        <p class="title">event_view로 이동 targer blank 미적용</p>
                                         <p class="date"><span>이벤트 기간 : </span> 2021. 8. 8 ~ 8. 15</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a onclick="openNewWebViewWithUrl('https://www.instagram.com/p/CQYaRp3JaoU/?utm_source=ig_web_copy_link')" href="#">
+                            <a onclick="openNewWebViewWithUrl('이벤트','https://www.instagram.com/p/CQYaRp3JaoU/?utm_source=ig_web_copy_link')" href="#">
                                 <div class="event-box">
                                     <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
                                         <div class="img-desc">
@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <p class="title">리스트에서 바로 New WebView with url</p>
+                                        <p class="title">openNewWebViewWithUrl 통해서 event_view로 이동</p>
                                         <p class="date"><span>이벤트 기간 : </span> 2021. 8. 8 ~ 8. 15</p>
                                     </div>
                                 </div>
@@ -98,38 +98,6 @@
     <!-- <div class="popup-page">
 </div> -->
     <!-- // .popup-page -->
-    
-    <script>
-        function isAndroid() {
-            return !!window.tswebview;
-        }
-
-        function isIOS() {
-            return !!window.webkit && !!window.webkit.messageHandlers;
-        }
-
-        function reload() {
-            location.reload();
-        }
-
-        
-        
-        function openNewWebViewWithUrl(target) {
-            var params = {
-                url: target
-            }
-            if (isAndroid() && !!window.tswebview.openNewWebView) {
-                // Call Android interface
-                window.tswebview.openNewWebView(JSON.stringify(params));
-            } else if (isIOS() && !!window.webkit.messageHandlers.openNewWebView) {
-                // Call iOS interface
-                window.webkit.messageHandlers.openNewWebView.postMessage(params);
-            } else {
-                // No Android or iOS interface found
-                alert("No openNewWebView APIs found.");
-            }
-        }
-    </script>
-    
+    <script type="text/javascript" src="bridge.js"></script>
     </body>
 </html>
