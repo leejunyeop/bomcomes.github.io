@@ -21,7 +21,7 @@
                 <div class="event-wrap">
                     <ul class="event-list">
                         <li>
-                            <a href="https://www.instagram.com/p/CQYaRp3JaoU/?utm_source=ig_web_copy_link" target="_blank">
+                            <a onclick="eventClick('이벤트','/event_view.html', 'event_view')" href="#">
                                 <div class="event-box">
                                     <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
                                         <div class="img-desc">
@@ -31,46 +31,30 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <p class="title">인스타그램으로 이동 target blank 적용</p>
+                                        <p class="title">event_view에서 Outlink로 인스타이동</p>
                                         <p class="date"><span>이벤트 기간 : </span> 2021. 8. 8 ~ 8. 15</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a onclick="openNewWebViewWithPath('이벤트','/event_view.html')" href="#">
+                            <a onclick="openNewWebViewWithUrl('이벤트','https://bomcomes.com/')" href="#">
                                 <div class="event-box">
                                     <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
                                         <div class="img-desc">
-                                            <span class="tag">인스타그램</span>
-                                            <p class="sub-title">봄 프렌즈 굿즈 출시 기념 이벤트</p>
-                                            <p class="title">굿즈 출시는 처음이라</p>
+                                            <span class="tag">AD</span>
+                                            <p class="sub-title">TEST</p>
+                                            <p class="title">TEST</p>
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <p class="title">event_view로 이동 targer blank 미적용</p>
+                                        <p class="title">openNewWebViewWithUrl</p>
                                         <p class="date"><span>이벤트 기간 : </span> 2021. 8. 8 ~ 8. 15</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a onclick="openNewWebViewWithUrl('이벤트','https://www.instagram.com/p/CQYaRp3JaoU/?utm_source=ig_web_copy_link')" href="#">
-                                <div class="event-box">
-                                    <div class="img-box" style="background-image: url(./img/banner_bg_insta_20210801.png);background-color:#fda68b;">
-                                        <div class="img-desc">
-                                            <span class="tag">인스타그램</span>
-                                            <p class="sub-title">봄 프렌즈 굿즈 출시 기념 이벤트</p>
-                                            <p class="title">굿즈 출시는 처음이라</p>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <p class="title">openNewWebViewWithUrl 통해서 event_view로 이동</p>
-                                        <p class="date"><span>이벤트 기간 : </span> 2021. 8. 8 ~ 8. 15</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+						<!--
                         <li class="end">
                             <div class="event-box">
                                 <div class="img-box" style="background-image: url(./img/banner_bg_01.png);background-color:#efa389;">
@@ -85,7 +69,7 @@
                                 </div>
                             </div>
                         </li>
-                        
+                        -->
                     </ul>
                 </div>
             </div>
@@ -99,5 +83,15 @@
 </div> -->
     <!-- // .popup-page -->
     <script type="text/javascript" src="bridge.js"></script>
+	<script>
+		function eventClick(title, target, name){
+			logEvent(name);
+			openNewWebViewWithPath(title,target);
+		}
+		
+		$(window).ready(function(){
+			screenEvent('event_list');
+		});
+	</script>
     </body>
 </html>
