@@ -318,9 +318,14 @@
 <!-- // .popup-page -->
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
-    $(window).ready(function(){
-        screenEvent('screen_webview_privacy');
-    });
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('screen_webview_privacy');
+  }
 </script>
 </body>
 </html>
