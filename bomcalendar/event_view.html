@@ -74,14 +74,14 @@
 <!-- // .popup-page --> 
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
-		function eventClick(target, data){
-			logEvent(data);
-			outlink(target);
-		}
-		
-		$(window).ready(function(){
-			screenEvent('event_view');
-		});
-	</script>
+  function eventClick(target, data){
+    logEvent(data);
+    outlink(target);
+  }
+
+  window.onload = function(){
+    screenEvent('screen_webview_event_추후변경');
+  }
+</script>
 </body>
 </html>
