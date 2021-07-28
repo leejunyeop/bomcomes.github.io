@@ -186,6 +186,7 @@ select {
 }
 .event-wrap .event-list .event-box .title-box {
   margin-top: 10px;
+	padding: 0 8px;
 }
 .event-wrap .event-list .event-box .title-box .title {
   color: #333333;
