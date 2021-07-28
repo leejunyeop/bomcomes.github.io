@@ -229,7 +229,7 @@ select {
   width: 100%;
 }
 .event-wrap .event-view {
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 }
 .event-wrap .event-view .desc {
   padding: 20px 14px;
@@ -301,16 +301,16 @@ select {
   z-index: 3;
   background-color: #544EF2;
   text-align: center;
-  line-height: 50px;
+  line-height: 60px;
   color: #FFFFFF;
   border: none;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 .btn-view a, a:active, a:hover {
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media screen and (max-width: 320px) {
   .event-wrap .event-list .event-box .img-box .img-desc .title {
