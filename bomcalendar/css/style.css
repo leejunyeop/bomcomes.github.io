@@ -228,6 +228,9 @@ select {
 .event-wrap .event-view .img-box img {
   width: 100%;
 }
+.event-wrap .event-view {
+	padding-bottom: 60px;
+}
 .event-wrap .event-view .desc {
   padding: 20px 14px;
   color: #000;
@@ -291,15 +294,18 @@ select {
 }
 .btn-view {
   display: block;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
   background-color: #544EF2;
   text-align: center;
   line-height: 50px;
   color: #FFFFFF;
   border: none;
-  border-radius: 6px;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-bottom: 8px;
 }
 .btn-view a, a:active, a:hover {
   text-decoration: none;
