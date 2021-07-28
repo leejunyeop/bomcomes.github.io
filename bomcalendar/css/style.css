@@ -231,6 +231,8 @@ select {
 }
 .event-wrap .event-view {
 	padding-bottom: 80px;
+	padding-bottom: calc(constant(safe-area-inset-bottom) + 80px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 80px);
 }
 .event-wrap .event-view .desc {
   padding: 20px 14px;
