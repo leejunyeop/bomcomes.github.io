@@ -20,7 +20,7 @@ function openNewWebViewWithPath(title, target) {
     window.webkit.messageHandlers.openNewWebView.postMessage(params);
   } else {
     // No Android or iOS interface found
-    alert("No openNewWebView APIs found.");
+    // alert("No openNewWebView APIs found.");
   }
 }
 
@@ -37,7 +37,7 @@ function openNewWebViewWithUrl(title, target) {
     window.webkit.messageHandlers.openNewWebView.postMessage(params);
   } else {
     // No Android or iOS interface found
-    alert("No openNewWebView APIs found.");
+    // alert("No openNewWebView APIs found.");
   }
 }
 
@@ -50,7 +50,7 @@ function closeWebView() {
     window.webkit.messageHandlers.closeWebView.postMessage('');
   } else {
     // No Android or iOS interface found
-    alert("No closeWebView APIs found.");
+    // alert("No closeWebView APIs found.");
   }
 }
 
@@ -63,7 +63,7 @@ function goBack() {
     window.webkit.messageHandlers.goBack.postMessage('');
   } else {
     // No Android or iOS interface found
-    alert("No goBack APIs found.");
+    // alert("No goBack APIs found.");
   }
 }
 
@@ -79,7 +79,7 @@ function openExternalWebView(target) {
     window.webkit.messageHandlers.openExternalWebView.postMessage(params);
   } else {
     // No Android or iOS interface found
-    alert("No openExternalWebView APIs found.");
+    // alert("No openExternalWebView APIs found.");
   }
 }
 
@@ -95,7 +95,7 @@ function outlink(target) {
     window.webkit.messageHandlers.outlink.postMessage(params);
   } else {
     // No Android or iOS interface found
-    alert("No outlink APIs found.");
+    // alert("No outlink APIs found.");
   }
 }
 
@@ -114,7 +114,7 @@ function screenEvent(name) {
     window.webkit.messageHandlers.screenEvent.postMessage(message);
   } else {
     // No Android or iOS interface found
-    alert("No screenEvent APIs found.");
+    // alert("No screenEvent APIs found.");
   }
 }
 
@@ -133,7 +133,7 @@ function logEvent(name) {
     window.webkit.messageHandlers.logEvent.postMessage(message);
   } else {
     // No Android or iOS interface found
-    alert("No logEvent APIs found.");
+    // alert("No logEvent APIs found.");
   }
 }
 
@@ -153,6 +153,6 @@ function setUserProperty(name, value) {
     window.webkit.messageHandlers.setUserProperty.postMessage(message);
   } else {
     // No Android or iOS interface found
-    alert("No setUserProperty APIs found.");
+    // alert("No setUserProperty APIs found.");
   }
 }
